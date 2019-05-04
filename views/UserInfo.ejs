@@ -55,7 +55,7 @@
                   </div>
                   <form class="user" method="get" action="payment">
                       <input id="plan" name="plan" hidden>
-                      
+                      <input type="hidden" value="<%= uinfo %>" name="uinfo">
                       <div  class="text-center" style="margin: auto;">
                         <div class="row col">
                           <label>Gender</label>
@@ -63,7 +63,7 @@
                           <br>
                         <div class="row col" style="border-top: 0px; margin-bottom: 10px;">
                             <div class="form-group">
-                            <select class="form-control infoGender" id="gender">
+                            <select class="form-control infoGender" name="gender" id="gender">
                               <option>Female</option>
                               <option>Male</option>
                               <option selected>Other</option>
@@ -75,15 +75,13 @@
                         </div>
                         <div class="row col" style="border-top: 0px; margin-bottom: 10px;">
                             <div class="form-group">
-                            <select class="form-control infoGender" id="age">
-                              <option selected>Under 12 years old</option>
-                              <option>12-17 years old</option>
-                              <option>18-24 years old</option>
-                              <option>25-34 years old</option>
-                              <option>35-44 years old</option>
-                              <option>45-54 years old</option>
-                              <option>65-74 years old</option>
-                              <option>75 years or older</option>
+                            <select class="form-control infoGender" name="age" id="age">
+                              <option value="20" selected>18-24 years old</option>
+                              <option value="30">25-34 years old</option>
+                              <option value="40">35-44 years old</option>
+                              <option value="50">45-54 years old</option>
+                              <option value="60">65-74 years old</option>
+                              <option value="70">75 years or older</option>
                             </select>
                           </div>
                         </div>
@@ -98,10 +96,10 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <input class="form-control weight" type="number" id="weight" min="0" data-bind="value:replyNumber" />
+                                <input class="form-control weight" type="number" name="weight" id="weight" min="0" data-bind="value:replyNumber" />
                             </div>
                             <div class="col">
-                                <input class="form-control weight" type="number" id="height" min="0" data-bind="value:replyNumber" />
+                                <input class="form-control weight" type="number" name="height" id="height" min="0" data-bind="value:replyNumber" />
                             </div>
                         </div>
                           

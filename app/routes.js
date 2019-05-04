@@ -2,6 +2,7 @@
 var express = require('express');
 var router = express.Router();
 
+const bcrypt = require('bcrypt');
 const mysql = require('mysql2/promise');
 
 async function loadDb() {
@@ -43,18 +44,60 @@ router.get('/account', async (req, res) => {
 });
 
 router.get('/userinfo', async(req, res) => {
+    let boundary = "R^F^B";
+    let udata = req.query.email + boundary + req.query.psw;
+    let buff = new Buffer(udata);
+    let uinfo = buff.toString('base64');
+
+    res.locals.uinfo = uninfo;
     res.render('UserInfo');
 });
 
 router.get('/payment', async(req, res) => {
+    let boundary = "R^F^B";
+    let udata = req.query.age + boundary + req.query.weight + boundary + req.query.height + boundary + req.query.gender;
+    let buff = new Buffer(udata);
+    let uinfo = buff.toString('base64');
+
+    res.locals.uinfo = req.query.uinfo;
+    res.locals.uinfo2 = uinfo;
     res.render('SetUpYourPayment');
 });
 
 router.get('/card', async (req, res) => {
+    res.locals.uinfo = req.query.uinfo;
+    res.locals.uinfo2 = req.query.uinfo;
     res.render('card');
 });
 
 router.post('/card', async (req, res) => {
+    let boundary = "R^F^B";
+
+    let buff1 = new Buffer(req.body.uinfo, 'base64');
+    let buff2 = new Buffer(req.body.uinfo2, 'base64');
+
+    let info1 = buff1.toString('ascii');
+    let info2 = buff2.toString('ascii');
+
+    let infoArr1 = info1.split(boundary);
+    let infoArr2 = info2.split(boundary);
+
+    let email = infoArr1[0];
+    let pword = bcrypt.hashSync(infoArr1[1], bcrypt.genSaltSync(8));
+    let age = infoArr2[0];
+    let weight = infoArr2[1];
+    let height = infoArr2[2];
+    let gender = infoArr2[3];
+
+    console.log(`
+        EMAIL = ${email}
+        PWORD = ${pword}
+        AGE = ${age}
+        WEIGHT = ${weight}
+        HEIGHT = ${height}
+        GENDER = ${gender} 
+    `);
+
     res.render('FinishedSignUp');
 });
 
