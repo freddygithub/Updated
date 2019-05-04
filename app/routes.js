@@ -105,6 +105,7 @@ router.post('/card', async (req, res) => {
 
     let addr = req.body.addr;
     let state = req.body.state;
+    let city = req.body.city;
     let zip = req.body.zip;
     let phone = req.body.phone;
 
