@@ -5,9 +5,10 @@ var router = express.Router();
 const bcrypt = require('bcrypt');
 const mysql = require('mysql2/promise');
 
+var conn;
 async function loadDb() {
     try {
-        let conn = await mysql.createConnection({
+        conn = await mysql.createConnection({
             host     : process.env.ENDPOINT,
             database : process.env.DATABASE,
             user     : process.env.USERNAME,
