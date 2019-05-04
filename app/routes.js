@@ -66,7 +66,7 @@ router.get('/payment', async(req, res) => {
 
 router.get('/card', async (req, res) => {
     res.locals.uinfo = req.query.uinfo;
-    res.locals.uinfo2 = req.query.uinfo;
+    res.locals.uinfo2 = req.query.uinfo2;
     res.render('card');
 });
 
