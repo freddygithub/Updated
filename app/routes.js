@@ -95,6 +95,23 @@ router.post('/card', async (req, res) => {
     let weight = infoArr2[1];
     let height = infoArr2[2];
     let gender = infoArr2[3];
+    let name = req.body.name;
+
+    let fname = req.body.name.split(' ')[0];
+    let lname = req.body.name.slice(fname.length+1);
+
+    let addr = req.body.addr;
+    let state = req.body.state;
+    let zip = req.body.zip;
+    let phone = req.body.phone;
+
+    let query = `INSERT INTO users (firstName, lastName, email, password, address, city, state, postalCode, phone, age, weight, height) VALUES (${conn.escape(fname)}, ${conn.escape(lname)}, ${conn.escape(email)}, ${pword}, ${conn.escape(addr)}, ${conn.escape(city)}, ${conn.escape(state)}, ${conn.escape(zip)}, ${conn.escape(phone)}, ${conn.escape(age)}, ${conn.escape(weight)}, ${conn.escape(height)})`
+
+    try {
+        await conn.query(query);
+    } catch (e) {
+        console.warn(e);
+    }
 
     console.log(`
         EMAIL = ${email}
