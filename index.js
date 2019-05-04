@@ -6,8 +6,6 @@ require('dotenv').config();
 var express = require('express');
 var app = express();
 var port = process.env.PORT || 80;
-var mongoose = require ('mongoose');
-var passport = require ('passport');
 var flash = require('connect-flash');
 
 var morgan = require('morgan');
@@ -32,6 +30,7 @@ app.use(session({ secret: 'ZWNoZWxvbndlYmFkbWluYXBp', saveUninitialized : false}
 app.use(flash());
 
 // routes ====================================================================
+app.use('/', require('./app/routes.js'));
 
 // launch ====================================================================
 var server = app.listen(port);
