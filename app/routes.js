@@ -89,6 +89,8 @@ router.post('/card', async (req, res) => {
         INFO2 = ${info2}
     `);
 
+    console.log(req.body);
+
     let email = infoArr1[0];
     let pword = bcrypt.hashSync(infoArr1[1], bcrypt.genSaltSync(8));
     let age = infoArr2[0];
