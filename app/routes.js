@@ -49,7 +49,7 @@ router.get('/userinfo', async(req, res) => {
     let buff = new Buffer(udata);
     let uinfo = buff.toString('base64');
 
-    res.locals.uinfo = uninfo;
+    res.locals.uinfo = uinfo;
     res.render('UserInfo');
 });
 
