@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Reflect Sign up</title>
+
+  <!-- Custom fonts for this template-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    
+
+</head>
+
+<body class="bg-gradient-primary">
+
+<div class="container my-5">
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top border bg-light" id="mainNav">
+    <div class="container">
+      <div class="container" style="width: 250px; margin: 0;">
+          <div class="row">
+            <div class="col" ><div class="echelonLogo-2"></div></div>
+            <div class="w-100"></div>
+            <div class="col" ><div class="logoy-2"></div></div>
+          </div>
+        </div>
+      <a class="signinText" href="login.html">Sign In</a>
+    </div>
+</nav>
+      
+    <div class="row justify-content-center">
+
+      <div class="col-lg-8 col-lg-12 col-md-9">
+        <div class="card o-hidden border-0 my-5">
+          <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <div class="p-5">
+                  <div class="text-center">
+                      <div class="cir"><i class="fas fa-check fa-2x bigCheck"></i></div>
+                      <br>
+                      <div class="stepsText">Step <b>2</b> of <b>3</b></div>
+                    <h1 class="h4 mb-4 signinHeader" style="white-space: nowrap;">Create your account.</h1>
+                      <p>Just a few more steps and you're done!</p>
+                  </div>
+                  <form class="user" method="get" action="UserInfo.html">
+                      <input id="plan" name="plan" hidden>
+                      <div class="text-center">
+                        <div class="form-group">
+                          <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                        </div>
+                          <br>
+                        <div class="form-group">
+                          <input type="password" class="form-control form-control-user" id="psw" name="psw" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control form-control-user" placeholder="Verify Password">
+                        </div>
+                          
+                        <div id="message">
+                          <h5>Password must contain the following:</h5>
+                          <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                          <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                          <p id="number" class="invalid">A <b>number</b></p>
+                          <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                        </div>
+                          
+                    </div>
+                      <br>
+                    <button type="submit" id="sumbitBtn" class="btn btn-danger btn-user btn-block signupText">
+                      Continue
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+  <script src="js/agency.min.js"></script>
+    
+</body>
+
+</html>

@@ -20,10 +20,14 @@
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
     "express-session": "^1.16.1",
     "moment": "^2.24.0",
     "morgan": "^1.9.1",
+    "mysql2": "^1.6.5",
     "stripe": "^6.31.2"
   }
 }
