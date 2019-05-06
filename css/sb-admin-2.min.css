@@ -12910,8 +12910,8 @@ input[type='file'] {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 100%;
-    height: 300px;
+    width: 100%;
+    height: 100%;
 }
 .splashPic2{
     background-image: url('../img/reflect1.png');
@@ -12922,8 +12922,8 @@ input[type='file'] {
     height: 100%;
 }
 .box{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 .topping{
     margin-top: 60px;
@@ -12934,7 +12934,7 @@ input[type='file'] {
 }
 .splashText{
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 .footerCustomSplash{
     background-color: inherit;
@@ -12943,6 +12943,52 @@ input[type='file'] {
 .footerCustomSplash a{
     color: white;
 }
+.accordion {
+  background-color: #383838;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 17px;
+  transition: 0.4s;
+  margin-bottom: 10px;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #383838;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 17px;
+    text-align: left;
+}
+
+
+
+
+
 /* Stays at bottom of file, MOBILE CSS*/
 @media (max-width:768px) {
     .footerList{
@@ -13026,5 +13072,8 @@ input[type='file'] {
     }
     .cb-2{
         margin-bottom: 15px;
+    }
+    .splashHeading{
+        font-size: 2rem;
     }
 }
