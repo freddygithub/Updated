@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Reflect Sign up</title>
+
+  <!-- Custom fonts for this template-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    
+<script src="https://js.stripe.com/v3/"></script>
+    
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="bg-gradient-primary">
+
+<div class="container my-5">
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top border bg-light" id="mainNav">
+    <div class="container">
+      <div class="container" style="width: 250px; margin: 0;">
+          <div class="row">
+            <div class="col" ><div class="echelonLogo-2"></div></div>
+            <div class="w-100"></div>
+            <div class="col" ><div class="logoy-2"></div></div>
+          </div>
+        </div>
+      <a class="signinText" href="login.html">Sign In</a>
+    </div>
+</nav>
+      
+    <div class="row justify-content-center">
+
+      <div class="col-lg-8 col-lg-12 col-md-9">
+        <div class="card o-hidden border-0 my-5">
+          <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <div class="p-5">
+                  <div class="text-center">
+                      <div class="cir"><i class="fas fa-lock fa-2x bigCheck"></i></div>
+                      <br>
+                      <div class="stepsText">Step <b>3</b> of <b>3</b></div>
+                    <h1 class="h4 mb-4 signinHeader" style="white-space: nowrap;">Set Up Your Payment.</h1>
+                  </div>
+                    <div class="text-left">
+                        <div class="contextBody">
+                            <i class="fas fa-check spacey"></i>
+                          You won't be charged until after your 14 day trial ends.
+                        </div>
+                          <br>
+                        <div class="contextBody">
+                            <i class="fas fa-check spacey"></i>
+                          No commitments, cancel anytime.
+                        </div>
+                    </div>
+                </div>
+                  
+                <form class="user" method="get" action="card">
+                    <input id="plan" name="plan" hidden>
+                    <input name="uinfo" value="<%= uinfo %>" type="hidden">
+                    <input name="uinfo2" value="<%= uinfo2 %>" type="hidden">
+                    <div class="row justify-content-center">
+                        <button type="submit" id="sumbitBtn" class="btn btn-danger btn-user paymentBtn" href="card"> Credit or Debit Card <i class="fas fa-2x fa-credit-card"></i></button>
+                    </div>
+                  </form>
+                  
+                  <div class="row justify-content-center">
+                      <a class="btn btn-danger btn-user paymentBtn-2" href="activationcode"> Activation Code <i class="fas fa-2x fa-key"></i></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+    
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/agency.min.js"></script>
+  <script src="js/example5.js"></script>
+    
+</body>
+
+</html>

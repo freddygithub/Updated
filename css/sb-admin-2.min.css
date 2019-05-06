@@ -12404,9 +12404,6 @@ body.sidebar-toggled footer.sticky-footer {
 .change-icon:hover > .fa + .fa {
   display: inherit;
 }
-.spacey{
-    display: inline-block;
-}
 .spaceyh6{
     margin-bottom: 15px;
 }
@@ -12598,10 +12595,10 @@ input[type='file'] {
     font-weight: 500;
 }
 .contextBody{
-    font-size: 17px;
+    font-size: 18px;
     color: #333;
     font-family: 'Helvetica Neue';
-    font-weight: 150;
+    font-weight: 300;
 }
 .contextBody-2{
     font-size: 20px;
@@ -12611,6 +12608,7 @@ input[type='file'] {
 }
 .cb-2{
     margin-top: 15px;
+    margin-bottom: 0px;
 }
 .stepsText{
     color: #333;
@@ -12622,7 +12620,7 @@ input[type='file'] {
     font-weight: 300;
 }
 .spacey{
-    margin-right: 10px;
+    margin-top: 40%;
     color: #e74a3b;
 }
 .spacey-lg{
@@ -12733,6 +12731,7 @@ input[type='file'] {
     cursor: pointer;
     font-size: 14px;
     font-weight: 200;
+    padding-top: 10px;
 }
 .contextBodyProfile{
     margin-left: 10%;
@@ -12767,6 +12766,9 @@ input[type='file'] {
 }
 .activey{
     color: red;
+}
+.notActivey{
+    color: gray;
 }
 .infoGender{
     width: 300px !important;
@@ -12829,6 +12831,7 @@ input[type='file'] {
 .cb-Mobile{
     margin-top: 15px;
     display: none;
+    width: 100%;
 }
 .cbText{
    display: block; 
@@ -12876,9 +12879,6 @@ input[type='file'] {
 }
 .discounted{
     font-size: 15px !important;
-    position: absolute;
-    top: 46%;
-    left: 79.8%;
 }
 .discounted-2{
     font-size: 16px !important;
@@ -12889,22 +12889,67 @@ input[type='file'] {
 .cardEdit{
     width: 250px;
 }
-
-
+.mobileExtendRow{
+    width: 400px;
+}
+.borderCustom{
+    border-right: 0px solid black;
+}
+.footerCustom{
+    background-color: whitesmoke;
+}
+.splash{
+    background-color: black;
+    color: black;
+}
+.splashSignIn{
+    color: white;
+}
+.splashPic3{
+    background-image: url('../img/reflect3.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 300px;
+}
+.splashPic2{
+    background-image: url('../img/reflect1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.box{
+    width: 200px;
+    height: 200px;
+}
+.topping{
+    margin-top: 60px;
+}
+.splashHeading{
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+.splashText{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.footerCustomSplash{
+    background-color: inherit;
+    border-top: 1px solid grey;
+}
+.footerCustomSplash a{
+    color: white;
+}
 /* Stays at bottom of file, MOBILE CSS*/
 @media (max-width:768px) {
-    
-    .discounted{
-        font-size: 15px !important;
-        position: absolute;
-        top: 47%;
-        left: 25%;
+    .footerList{
+        width: 130px;
     }
-    .discounted-2{
-        font-size: 15px !important;
-        position: absolute;
-        top: 47%;
-        left: 2%;
+    .borderCustom{
+        border-right: 1px solid black;
     }
     .mobileShow{
         display: inline-block;
@@ -12955,6 +13000,9 @@ input[type='file'] {
     .spacey-lg{
         padding-right: 0px; 
     }
+    .spacey{
+        padding-top: 6px;
+    }
     .logoy{
        width: 160px;
     }
@@ -12975,5 +13023,8 @@ input[type='file'] {
     }
     .signinText{
          margin-right: 0px;
+    }
+    .cb-2{
+        margin-bottom: 15px;
     }
 }
