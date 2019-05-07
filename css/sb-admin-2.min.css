@@ -12672,6 +12672,16 @@ input[type='file'] {
    margin-top: 10px !important;
    margin: auto;
 }
+.logo-splash{
+   background-image: url('../img/reflect-logo-custom.png');
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 150px;
+   height: 50px;
+   margin-top: 10px !important;
+   margin: auto;
+}
 .echelonLogo{
     background-image: url('../img/logo.png');
    background-size: contain;
@@ -12940,10 +12950,10 @@ input[type='file'] {
 }
 .splashHeading{
     font-weight: bold;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
 }
 .splashText{
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 300;
 }
 .footerCustomSplash{
@@ -12962,7 +12972,7 @@ input[type='file'] {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 17px;
+  font-size: 16px;
   transition: 0.4s;
   margin-bottom: 10px;
 }
@@ -13077,6 +13087,10 @@ input[type='file'] {
         height: 50px;
     }
     .echelonLogo-2{
+       width: 30px;
+       height: 30px;
+    }
+    .echelonLogo-splash{
        width: 30px;
        height: 30px;
     }
