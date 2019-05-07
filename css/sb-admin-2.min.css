@@ -48,6 +48,7 @@
 
 html {
   font-family: 'Helvetica Neue', Helvetica,Arial,sans-serif;
+    
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
@@ -12644,7 +12645,7 @@ input[type='file'] {
 }
 .optionBtn{
     margin: 2px;
-    padding: 20px;
+    padding: 20px 0px;
 }
 .signInBtn{
     padding: 10px 50px;
@@ -12942,15 +12943,15 @@ input[type='file'] {
     height: 100%;
 }
 .box{
-    width: 300px;
     height: 300px;
 }
 .topping{
     margin-top: 60px;
 }
 .splashHeading{
-    font-weight: bold;
-    font-size: 2.5rem;
+    font-weight: 500;
+    font-size: 2.3rem;
+    font-family: 'Helvetica Neue', Helvetica,Arial,sans-serif;
 }
 .splashText{
     font-size: 1.3rem;
@@ -12964,7 +12965,7 @@ input[type='file'] {
     color: white;
 }
 .accordion {
-  background-color: #383838;
+  background-color: #303030;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -12972,9 +12973,10 @@ input[type='file'] {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 300;
   transition: 0.4s;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .active, .accordion:hover {
@@ -12989,7 +12991,7 @@ input[type='file'] {
   margin-left: 5px;
 }
 
-.active:after {
+.accordion active:after {
   content: "\2212";
 }
 
@@ -12999,10 +13001,10 @@ input[type='file'] {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: white;
-  font-size: 17px;
-    text-align: left;
+  font-size: 18px;
+  text-align: left;
 }
 .splashNav{
     position: absolute;
@@ -13012,12 +13014,19 @@ input[type='file'] {
     left: 0;
     z-index: 1030;
 }
-
+.shrinkText{
+    font-size: 18px;
+    padding: 20px;
+}
 
 
 
 /* Stays at bottom of file, MOBILE CSS*/
 @media (max-width:768px) {
+    
+    .accordion {
+      font-size: 16px;
+    }
     .footerList{
         width: 130px;
     }
@@ -13037,7 +13046,6 @@ input[type='file'] {
        display: none; 
     }
     .optionBtn{
-        padding: 20px 10px;
         white-space: nowrap;
         flex-basis: 0;
     }
@@ -13106,5 +13114,9 @@ input[type='file'] {
     }
     .splashHeading{
         font-size: 2rem;
+    }
+    .shrinkText{
+        font-size: 15px;
+        
     }
 }
