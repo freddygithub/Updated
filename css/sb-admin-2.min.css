@@ -12895,6 +12895,9 @@ input[type='file'] {
 .borderCustom{
     border-right: 0px solid black;
 }
+.borderCustomGrey{
+    border-top: 2px solid darkgrey;
+}
 .footerCustom{
     background-color: whitesmoke;
 }
@@ -12904,7 +12907,14 @@ input[type='file'] {
 }
 .splashSignIn{
     color: white;
+    background: #e74a3b;
+    font-size: 18px !important;
+    font-weight: 400 !important;
 }
+.splashSignIn:hover{
+   color: lightgray;
+}
+
 .splashPic3{
     background-image: url('../img/reflect3.png');
     background-size: contain;
@@ -12984,7 +12994,14 @@ input[type='file'] {
   font-size: 17px;
     text-align: left;
 }
-
+.splashNav{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
 
 
 
