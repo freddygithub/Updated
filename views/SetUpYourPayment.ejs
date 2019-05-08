@@ -53,23 +53,29 @@
             <!-- Nested Row within Card Body -->
             <div class="row justify-content-center">
               <div class="col-lg-6">
-                <div class="p-5">
+                <div class="p-5 text-left" style="padding: 2rem !important">
                   <div class="text-center">
                       <div class="cir"><i class="fas fa-lock fa-2x bigCheck"></i></div>
                       <br>
                       <div class="stepsText">Step <b>3</b> of <b>3</b></div>
                     <h1 class="h4 mb-4 signinHeader" style="white-space: nowrap;">Set Up Your Payment.</h1>
                   </div>
-                    <div class="text-left">
-                        <div class="contextBody">
-                            <i class="fas fa-check spacey"></i>
-                          You won't be charged until after your 14 day trial ends.
-                        </div>
-                          <br>
-                        <div class="contextBody">
-                            <i class="fas fa-check spacey"></i>
-                          No commitments, cancel anytime.
-                        </div>
+                    <div class="row justify-content-center ">
+                            <div class="col-1">
+                                <i class="fas fa-check spacey"></i>
+                            </div>
+                            <div class="col-10">
+                                <div class="contextBody">
+                                    <p>You won't be charged until after your 14 day trial ends.</p>
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col-1"><i class="fas fa-check spacey"></i></div>
+                            <div class="col-10">   
+                                <div class="contextBody">
+                                    <p>No commitments, cancel anytime.</p>
+                                </div>
+                            </div>
                     </div>
                 </div>
                   
@@ -78,12 +84,12 @@
                     <input name="uinfo" value="<%= uinfo %>" type="hidden">
                     <input name="uinfo2" value="<%= uinfo2 %>" type="hidden">
                     <div class="row justify-content-center">
-                        <button type="submit" id="sumbitBtn" class="btn btn-danger btn-user paymentBtn" href="card"> Credit or Debit Card <i class="fas fa-2x fa-credit-card"></i></button>
+                        <button type="submit" id="sumbitBtn" class="btn btn-danger paymentBtn" href="card"> Credit or Debit Card <i class="fas fa-2x fa-credit-card"></i></button>
                     </div>
                   </form>
                   
                   <div class="row justify-content-center">
-                      <a class="btn btn-danger btn-user paymentBtn-2" href="activationcode"> Activation Code <i class="fas fa-2x fa-key"></i></a>
+                      <a class="btn btn-danger paymentBtn-2" href="activationcode"> Activation Code <i class="fas fa-2x fa-key"></i></a>
                   </div>
               </div>
             </div>
@@ -94,6 +100,93 @@
     
   </div>
     
+    
+<!-- Footer -->
+<footer class="page-footer font-small footerCustom">
+
+      <!-- Footer Links -->
+  <div class="container text-center">
+
+    <!-- Grid row -->
+    <div class="row justify-content-center">
+        
+      <!-- Grid column -->
+      <div class="col-md-3 footerList">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4"></h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Terms of use</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+
+      <!-- Grid column -->
+      <div class="col-md-3 footerList">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4"></h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Privacy</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 footerList">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4"></h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">FAQ</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 footerList">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4"></h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Help Center</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+    
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+      <a href="https://echelonfit.com/">© 2019 Echelon Fitness LLC. All rights reserved. Patent pending.</a> 
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+    
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -103,7 +196,6 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/agency.min.js"></script>
-  <script src="js/example5.js"></script>
     
 </body>
 
