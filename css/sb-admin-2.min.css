@@ -45,7 +45,9 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+html,body{
+    height: 100%
+}
 html {
   font-family: 'Helvetica Neue', Helvetica,Arial,sans-serif;
     
@@ -166,7 +168,7 @@ a:hover{
 }
 
 a:not([href]):not([tabindex]) {
-  color: inherit;
+  color: white;
   text-decoration: none;
 }
 
@@ -544,12 +546,12 @@ pre code {
 @media (min-width:576px) {
   .container {
     max-width: 540px;
-  }
+  } 
 }
 
 @media (min-width:768px) {
   .container {
-    max-width: 720px;
+    max-width: 960px;
   }
 }
 
@@ -836,6 +838,7 @@ pre code {
 }
 
 @media (min-width:576px) {
+    
   .col-sm {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -4601,6 +4604,10 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
     padding-right: 0;
     padding-left: 0;
   }
+  /*Needs fixings*/ 
+    .spacey-lg{
+        padding: 0 !important;
+    }
 }
 
 @media (min-width:992px) {
@@ -12607,6 +12614,12 @@ input[type='file'] {
     font-family: 'Helvetica Neue';
     font-weight: 150;
 }
+.contextBody-sub{
+    font-size: 16px;
+    color: #333;
+    font-family: 'Helvetica Neue';
+    font-weight: 300;
+}
 .cb-2{
     margin-top: 15px;
     margin-bottom: 0px;
@@ -12701,6 +12714,7 @@ input[type='file'] {
    width: 30px;
    height: 30px;
    margin: auto;
+   margin-top: 15px;
 }
 .echelonLogo-3{
    background-image: url('../img/logo.png');
@@ -12738,15 +12752,15 @@ input[type='file'] {
     right: 13%;
 }
 .editOption p{
-    color: #e74a3b;
+    color: dodgerblue;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 200;
     padding-top: 10px;
 }
 .contextBodyProfile{
-    margin-left: 10%;
-    font-size: 20px;
+    margin-left: 20%;
+    font-size: 18px;
     color: #333;
     font-family: 'Helvetica Neue';
     font-weight: 150;
@@ -12754,7 +12768,7 @@ input[type='file'] {
     margin-top: 10px;
 }
 .contextBodyProfile strong{
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     font-weight: 500;
 }
@@ -12783,6 +12797,10 @@ input[type='file'] {
 }
 .infoGender{
     width: 300px !important;
+    height: 50px;
+}
+.infoGender-2{
+    width: 100% !important;
     height: 50px;
 }
 .weight{
@@ -13066,12 +13084,231 @@ input[type='file'] {
     color: #333;
     font-weight: 150;
 }
-
-
+.familyMemberPhoto{
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 53px;
+    height: 53px;
+    border-radius: 5%;
+    background-color: lightgray;
+}
+.familyMemberPhoto-lg{
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 95px;
+    height: 85px;
+    border-radius: 5%;
+    background-color: lightgray;
+    margin: 0;
+}
+.label-xl{
+    font-size: 25px;
+}
+.fa-user-circle{
+    padding-top: 20%;
+}
+.chooseFile{
+    margin-top: 10px;
+    background-color: #e74a3b;
+    color: white;
+    padding: 7px 22px;
+    white-space: nowrap;
+    margin-right: 100%;
+}
+.chooseFile:hover{
+    color: whitesmoke;
+    background-color: red;
+}
+.chooseFile-2{
+    margin-top: 5px;
+    background-color: #e74a3b;
+    color: white !important;
+    padding: 7px 22px;
+    white-space: nowrap;
+    font-size: 13px;
+    position: absolute;
+}
+.chooseFile-2:hover{
+    color: whitesmoke;
+    background-color: red;
+}
+.pic {
+   opacity: 0;
+   position: absolute;
+   z-index: -1;
+}
+.familyMemberCardSpacer{
+    display: block;
+}
+.editOptionSub-card{
+    border: 3px solid lightgrey;
+    width: 800px;
+    height: 100px;
+}
+.active-card{
+    border: 3px solid red;
+}
+.check1{
+    position: absolute;
+    display: block;
+    top: 138px;
+    left: 13%;
+    z-index: 1;
+    color: red;
+    background: white;
+    
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    border: 2px solid red;
+    padding: 0.5em 0.5em;
+    text-align: center;
+}
+.check2{
+    position: absolute;
+    display: block;
+    top: 258px;
+    left: 13%;
+    z-index: 1;
+    color: red;
+    background: white;
+    
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    border: 2px solid red;
+    padding: 0.5em 0.5em;
+    text-align: center;
+}
+.check3{
+    position: absolute;
+    display: block;
+    top: 380px;
+    left: 13%;
+    z-index: 1;
+    color: red;
+    background: white;
+    
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    border: 2px solid red;
+    padding: 0.5em 0.5em;
+    text-align: center;
+}
+.editOptionSub-card:hover{
+    border: 3px solid red;
+}
+.equal {
+    height: 100%;
+    width: 100%;
+    margin-left: 0px;
+}
+.equal {
+    height: 100%;
+}
+.bg-whitesmoke{
+    background-color: whitesmoke;
+    border-color: red;
+}
+.navbar {
+    max-height:92px;
+}
+.CurrentPlan{
+    display: none;
+}
+.editSubBackCard{
+    position: absolute; 
+    background-color: whitesmoke; 
+    height: 94px;
+    width: 20%;
+}
+.editSubInput{
+    height: 50px;
+    width: 190px;
+}
+.editSubInput-2{
+    height: 50px;
+    width: 405px !important;
+}
+.birthday{
+    width: 100px;
+}
+.btn-block-sm{
+   width: 200px; 
+}
+.fmProfilePic{
+    position: absolute; 
+    left: 0%;
+}
+.modal-title{
+    color: #e74a3b;
+}
+.modal-label{
+    font-size: 15px;
+    font-weight: 300 !important;
+}
+.fmBtn{
+    white-space: nowrap;
+    font-size: 14px !important;
+}
+.squareOption{
+    background-color: #e74a3b;
+    color: white !important;
+    width: 10px;
+    height: 40px;
+    align-self: center;
+    border-radius: 5%;
+    text-align: center;
+    vertical-align: baseline;
+    display: inline-block;
+    line-height: 50px;
+}
+.squareOption:hover{
+    background-color: red;
+}
 
 /* Stays at bottom of file, MOBILE CSS*/
 @media (max-width:768px) {
-    
+    .squareOption i{
+        position: absolute;
+        left: 18%;
+        top: 15%;
+    }
+    .label-xl{
+        font-size: 17px;
+    }
+    .btn-block-sm{
+        width: 110px;
+    }
+    .birthday{
+        width: 80px;
+    }
+    .editSubInput{
+        height: 50px;
+        width: 130px;
+    }
+    .editSubInput-2{
+        height: 50px;
+        width: 280px !important;
+    }
+    .fmProfilePic{
+        position: relative;
+        width: 100%;
+        left: auto;
+    }
+    .extend{
+        width: 300px;
+    }
+    .navbar {
+        max-height: 150px;
+    }
+    .familyMemberCardSpacer{
+        display: none;
+    }
+    .familyMemberCard{
+    }
     .accordion {
       font-size: 16px;
     }
@@ -13104,11 +13341,15 @@ input[type='file'] {
         position: relative;
         right: auto;
     }
+    .editOption p{
+        font-size: 15px;
+    }
     .contextBox{
         height: 150px;
     }
     .contextBodyProfile{
         font-size: 17px;
+        margin-left: 10%;
     }
     .contextBodyProfile strong{
         font-size: 17px;
@@ -13164,7 +13405,34 @@ input[type='file'] {
         font-size: 2rem;
     }
     .shrinkText{
-        font-size: 15px;
-        
+        font-size: 15px;     
+    }
+    .check1{
+        top: 140px;
+        left: 16%;
+    }
+    .check2{
+        top: 260px;
+        left: 16%;
+    }
+    .check3{
+        top: 383px;
+        left: 16%;
+    }
+    .familyMemberPhoto-lg{
+        margin: auto;
+        width: 75px;
+        height: 75px;
+    }
+    .chooseFile{
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .chooseFile-2{
+        position: relative;
+    }
+    .modal-title{
+        font-size: 20px;
     }
 }

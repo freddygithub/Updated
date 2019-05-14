@@ -74,11 +74,11 @@
                         </div>
                         <div class="contextBodyProfile border-top border-dark">
                           <strong>VISA **** **** **** 4125</strong>
-                            <a class="editOption" href="editPayment.html"><p>Edit Payment Method</p></a>
+                            <a class="editOption" data-toggle="modal" data-target="#squarespaceModal1"><p>Edit Payment Method</p></a>
                         </div>
                         <div class="contextBodyProfile border-dark">
                           Billing Details
-                            <a class="editOption" data-toggle="modal" data-target="#squarespaceModal7"><p>Change Billing Details</p></a>
+                            <a class="editOption" data-toggle="modal" data-target="#squarespaceModal1"><p>Change Billing Details</p></a>
                         </div>
                       <br>
                         <div class="contextBodyTitle text-left border-top border-dark">
@@ -86,16 +86,9 @@
                         </div>
                         <div class="contextBodyProfile border-dark">
                           Manage Family Members
-                            <a class="editOption" href="FamilyPlanning.html"><p>Manage Family Members</p></a>
+                            <a class="editOption" href="FamilyPlanning.html"><p>Change Profile Names</p></a>
                         </div>
                       <br>
-                        <div class="contextBodyTitle text-left border-top border-dark">
-                          Plan Details
-                        </div>
-                        <div class="contextBodyProfile border-dark">
-                          Subscription
-                            <a class="editOption" href="EditPlan2.html"><p>Change Subscription</p></a>
-                        </div>
                   </form>
                 </div>
               </div>
@@ -114,23 +107,17 @@
   <div class="modal-dialog">
     <div class="modal-content">
         <div class="modal-header">
-            <h3 class="modal-title" id="lineModalLabel">Are you sure you want to cancel?</h3>
+            <h3 class="modal-title" id="lineModalLabel">Must use parent account to perform this action</h3>
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
         </div>
         <div class="modal-body">
-            <label class="modal-label">We are sorry to see you go. Your membership will be canceled at the end of your current billing period.</label>
+            <label class="modal-label">If you'd like to edit options like: cancel membership, edit payment option, change billing details... you must sign into the parent account and navigate to the profile page.</label>
         </div>
         <div class="modal-footer">
-            <div class="row w-100 h-100" style="padding-right: 20px;">
-                <div class="col-5" >
-                    <a href="" class="btn btn-danger btn-user btn-block signupText">
-                      Close
-                    </a>
-                </div>
-                <div class="col-2"></div>
-                <div class="col-5">
-                    <a href="" class="btn btn-danger btn-user btn-block signupText">
-                       Cancel Plan
+            <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                <div class="btn-group btn-delete hidden" role="group">
+                    <a class="btn btn-danger btn-user btn-block signupText" data-dismiss="modal">
+                      exit
                     </a>
                 </div>
             </div>
@@ -181,16 +168,10 @@
             </div>
         </div>
         <div class="modal-footer">
-            <div class="row w-100 h-100" style="padding-right: 20px;">
-                <div class="col-5" >
-                    <a href="" class="btn btn-danger btn-user btn-block signupText">
-                      Close
-                    </a>
-                </div>
-                <div class="col-2"></div>
-                <div class="col-5">
-                    <a href="" class="btn btn-danger btn-user btn-block signupText">
-                       Save
+            <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                <div class="btn-group btn-delete hidden" role="group">
+                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
+                      Save
                     </a>
                 </div>
             </div>
@@ -222,16 +203,10 @@
             </div>
         </div>
         <div class="modal-footer">
-            <div class="row w-100 h-100" style="padding-right: 20px;">
-                <div class="col-5" >
-                    <a href="" class="btn btn-danger btn-user btn-block signupText">
-                      Close
-                    </a>
-                </div>
-                <div class="col-2"></div>
-                <div class="col-5">
-                    <a href="" class="btn btn-danger btn-user btn-block signupText">
-                       Save
+            <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                <div class="btn-group btn-delete hidden" role="group">
+                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
+                      Save
                     </a>
                 </div>
             </div>
@@ -255,16 +230,10 @@
             </div>
         </div>
         <div class="modal-footer">
-            <div class="row w-100 h-100" style="padding-right: 20px;">
-                <div class="col-5" >
-                    <a href="" class="btn btn-danger btn-user btn-block signupText">
-                      Close
-                    </a>
-                </div>
-                <div class="col-2"></div>
-                <div class="col-5">
-                    <a href="" class="btn btn-danger btn-user btn-block signupText">
-                       Save
+            <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                <div class="btn-group btn-delete hidden" role="group">
+                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
+                      Save
                     </a>
                 </div>
             </div>
@@ -273,7 +242,32 @@
   </div>
 </div>
 
-
+<!-- line modal for Payment -->
+<div class="modal fade" id="squarespaceModal6" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title" id="lineModalLabel">Change Payment</h3>
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group fgModal">
+              <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Email...">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                <div class="btn-group btn-delete hidden" role="group">
+                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
+                      Save
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+ 
 <!-- line modal for Billing details -->
 <div class="modal fade" id="squarespaceModal7" role="dialog" aria-labelledby="modalLabel">
   <div class="modal-dialog">
@@ -306,16 +300,10 @@
           </div>
         </div>
         <div class="modal-footer">
-            <div class="row w-100 h-100" style="padding-right: 20px;">
-                <div class="col-5" >
-                    <a href="" class="btn btn-danger btn-user btn-block signupText">
-                      Close
-                    </a>
-                </div>
-                <div class="col-2"></div>
-                <div class="col-5">
-                    <a href="" class="btn btn-danger btn-user btn-block signupText">
-                       Save
+            <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+                <div class="btn-group btn-delete hidden" role="group">
+                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
+                      Save
                     </a>
                 </div>
             </div>
