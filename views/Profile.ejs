@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Reflect Sign up</title>
+  <title>Reflect</title>
 
   <!-- Custom fonts for this template-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -32,7 +32,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top border bg-light" id="mainNav">
     <div class="container">
-        <div class="container" style="width: 250px; margin: 0;">
+        <div class="container cardEdit">
           <div class="row">
             <div class="col" ><div class="echelonLogo-2"></div></div>
             <div class="w-100"></div>
@@ -53,15 +53,17 @@
               <div class="col-lg-12">
                 <div class="p-5">
                   <div class="text-center">
-                    <h1 class="h4 mb-4 signinHeader" style="white-space: nowrap;">Account</h1>
+                    <h1 class="h4 mt-4 mb-4 signinHeader">Account</h1>
                   </div>
-                  <form class="user" method="post">
-                        <div class="contextBodyTitle text-left border-top border-dark">
+                  <form class="user" method="post" >
+                        <div class="contextBodyTitle text-left border-top border-dark mb6">
                           Membership & Billing
+                            <br>
+                            <a class="btn chooseFile-2" data-toggle="modal" data-target="#squarespaceModal1">Cancel Membership</a>
                         </div>
-                      <a class="btn chooseFile-2" data-toggle="modal" data-target="#squarespaceModal1">Cancel Membership</a>
+                      
                         <div class="contextBodyProfile">
-                        <strong>User_email@example.com</strong>
+                        User_email@example.com
                             <a class="editOption" data-toggle="modal" data-target="#squarespaceModal5"><p>Change Email</p></a>
                         </div>
                         <div class="contextBodyProfile border-dark">
@@ -69,15 +71,15 @@
                             <a class="editOption" data-toggle="modal" data-target="#squarespaceModal4"><p>Change Password</p></a>
                         </div>
                         <div class="contextBodyProfile border-dark">
-                          Phone Number: ***-***-2345
+                          <i class="fas fa-mobile-alt"></i> Phone Number: ***-***-2345
                             <a class="editOption" data-toggle="modal" data-target="#squarespaceModal3"><p>Change Phone Number</p></a>
                         </div>
                         <div class="contextBodyProfile border-top border-dark">
-                          <strong>VISA **** **** **** 4125</strong>
+                          <i class="far fa-credit-card"></i> VISA **** **** **** 4125
                             <a class="editOption" href="editPayment.html"><p>Edit Payment Method</p></a>
                         </div>
                         <div class="contextBodyProfile border-dark">
-                          Billing Details
+                          <i class="far fa-address-book"></i> Billing Details
                             <a class="editOption" data-toggle="modal" data-target="#squarespaceModal7"><p>Change Billing Details</p></a>
                         </div>
                       <br>
@@ -85,15 +87,23 @@
                           Profile
                         </div>
                         <div class="contextBodyProfile border-dark">
-                          Manage Family Members
+                           <div class="profilePicture"><label class="editOption-2" for="pic2"><p>Change Profile Picture</p></label></div> 
+                            <input hidden type="file" id="pic2" class="pic">
+                        </div>
+                        <div class="contextBodyProfile border-dark">
+                          <i class="fas fa-users"></i> Manage Family Members
                             <a class="editOption" href="FamilyPlanning.html"><p>Manage Family Members</p></a>
+                        </div>
+                        <div class="contextBodyProfile border-dark">
+                          <i class="far fa-flag"></i> Notifications
+                            <a class="editOption" data-toggle="modal" data-target="#squarespaceModal8"><p>Communication Settings</p></a>
                         </div>
                       <br>
                         <div class="contextBodyTitle text-left border-top border-dark">
                           Plan Details
                         </div>
                         <div class="contextBodyProfile border-dark">
-                          Subscription
+                          <i class="far fa-clipboard"></i> Subscription
                             <a class="editOption" href="EditPlan2.html"><p>Change Subscription</p></a>
                         </div>
                   </form>
@@ -108,17 +118,19 @@
     </div>
 
   </div>
-   
+
 <!-- line modal for canceling -->
 <div class="modal fade" id="squarespaceModal1" role="dialog" aria-labelledby="modalLabel">
   <div class="modal-dialog">
     <div class="modal-content">
         <div class="modal-header">
-            <h3 class="modal-title" id="lineModalLabel">Are you sure you want to cancel?</h3>
+            <h3 class="modal-title" id="lineModalLabel">Cancel Confirmation</h3>
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
         </div>
         <div class="modal-body">
-            <label class="modal-label">We are sorry to see you go. Your membership will be canceled at the end of your current billing period.</label>
+            <label class="modal-label subText">Are you sure you want to cancel authorized/recurring payments to Reflect?</label>
+            <br>
+            <label class="modal-label subText">Your membership will be canceled at the end of your current billing period.</label>
         </div>
         <div class="modal-footer">
             <div class="row w-100 h-100" style="padding-right: 20px;">
@@ -130,7 +142,7 @@
                 <div class="col-2"></div>
                 <div class="col-5">
                     <a href="" class="btn btn-danger btn-user btn-block signupText">
-                       Cancel Plan
+                       Yes
                     </a>
                 </div>
             </div>
@@ -324,6 +336,49 @@
   </div>
 </div>
 
+<!-- line modal for notifications -->
+<div class="modal fade" id="squarespaceModal8" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title" id="lineModalLabel">Communication Settings</h3>
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        </div>
+        <div class="modal-body">
+            <label class="modal-label">Email Address: <strong>exampleemail@gmail.com</strong></label>
+            <br>
+            <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" checked/>
+            <label for="checkboxG4" class="css-label">Reflect Updates</label>
+            <p class="subText">New and enhanced features and tips for getting the most out of your subscription.</p>
+            <br>
+            <input type="checkbox" name="checkboxG5" id="checkboxG5" class="css-checkbox" checked/>
+            <label for="checkboxG5" class="css-label">Reflect Offers</label>
+            <p class="subText">Receive Reflect promotions.</p>
+            <br>
+            <input type="checkbox" name="checkboxG6" id="checkboxG6" class="css-checkbox" checked/>
+            <label for="checkboxG6" class="css-label">Reflect Surveys</label>
+            <p class="subText">Let your opinions be heard by giving us feedback on your experience with Reflect.</p>
+            
+        </div>
+        <div class="modal-footer">
+            <div class="row w-100 h-100" style="padding-right: 20px;">
+                <div class="col-5" >
+                    <a href="" class="btn btn-danger btn-user btn-block signupText">
+                      Close
+                    </a>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <a href="" class="btn btn-danger btn-user btn-block signupText">
+                       Save
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
  
 <!-- Footer -->
 <footer class="page-footer font-small footerCustom">
@@ -373,7 +428,7 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">FAQ</a>
+            <a href="index.html#FAQ">FAQ</a>
           </li>
         </ul>
 
@@ -421,8 +476,8 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
   <script src="js/agency.min.js"></script>
+    
 
 </body>
 

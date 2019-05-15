@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Reflect Sign up</title>
+  <title>Reflect</title>
 
   <!-- Custom fonts for this template-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -53,15 +53,14 @@
               <div class="col-lg-12">
                 <div class="p-5">
                   <div class="text-center">
-                    <h1 class="h4 mb-4 signinHeader" style="white-space: nowrap;">Account</h1>
+                    <h1 class="h4 mb-4 signinHeader">Account</h1>
                   </div>
                   <form class="user" method="post">
                         <div class="contextBodyTitle text-left border-top border-dark">
                           Membership & Billing
                         </div>
-                      <a class="btn chooseFile-2" data-toggle="modal" data-target="#squarespaceModal1">Cancel Membership</a>
                         <div class="contextBodyProfile">
-                        <strong>User_email@example.com</strong>
+                        User_email@example.com
                             <a class="editOption" data-toggle="modal" data-target="#squarespaceModal5"><p>Change Email</p></a>
                         </div>
                         <div class="contextBodyProfile border-dark">
@@ -69,24 +68,20 @@
                             <a class="editOption" data-toggle="modal" data-target="#squarespaceModal4"><p>Change Password</p></a>
                         </div>
                         <div class="contextBodyProfile border-dark">
-                          Phone Number: ***-***-2345
+                          <i class="fas fa-mobile-alt"></i> Phone Number: ***-***-2345
                             <a class="editOption" data-toggle="modal" data-target="#squarespaceModal3"><p>Change Phone Number</p></a>
-                        </div>
-                        <div class="contextBodyProfile border-top border-dark">
-                          <strong>VISA **** **** **** 4125</strong>
-                            <a class="editOption" data-toggle="modal" data-target="#squarespaceModal1"><p>Edit Payment Method</p></a>
-                        </div>
-                        <div class="contextBodyProfile border-dark">
-                          Billing Details
-                            <a class="editOption" data-toggle="modal" data-target="#squarespaceModal1"><p>Change Billing Details</p></a>
                         </div>
                       <br>
                         <div class="contextBodyTitle text-left border-top border-dark">
                           Profile
                         </div>
                         <div class="contextBodyProfile border-dark">
-                          Manage Family Members
-                            <a class="editOption" href="FamilyPlanning.html"><p>Change Profile Names</p></a>
+                           <div class="profilePicture"><label class="editOption-2" for="pic2"><p>Change Profile Picture</p></label></div> 
+                            <input hidden type="file" id="pic2" class="pic">
+                        </div>
+                        <div class="contextBodyProfile border-dark">
+                          <i class="far fa-flag"></i> Notifications
+                            <a class="editOption" data-toggle="modal" data-target="#squarespaceModal8"><p>Communication Settings</p></a>
                         </div>
                       <br>
                   </form>
@@ -107,11 +102,11 @@
   <div class="modal-dialog">
     <div class="modal-content">
         <div class="modal-header">
-            <h3 class="modal-title" id="lineModalLabel">Must use parent account to perform this action</h3>
+            <h3 class="modal-title" id="lineModalLabel">Access Denied</h3>
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
         </div>
         <div class="modal-body">
-            <label class="modal-label">If you'd like to edit options like: cancel membership, edit payment option, change billing details... you must sign into the parent account and navigate to the profile page.</label>
+            <label class="modal-label subText">You don't have permission to perform this action</label>
         </div>
         <div class="modal-footer">
             <div class="btn-group btn-group-justified" role="group" aria-label="group button">
@@ -125,34 +120,7 @@
     </div>
   </div>
 </div>
-
-<!-- line modal for language -->
-<div class="modal fade" id="squarespaceModal2" role="dialog" aria-labelledby="modalLabel">
-  <div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h3 class="modal-title" id="lineModalLabel">Change Language</h3>
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-        </div>
-        <div class="modal-body">
-            <select class="selectpicker" data-width="fit">
-                <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
-              <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
-            </select>
-        </div>
-        <div class="modal-footer">
-            <div class="btn-group btn-group-justified" role="group" aria-label="group button">
-                <div class="btn-group btn-delete hidden" role="group">
-                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
-                      Save
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
-</div>
-    
+  
 <!-- line modal for phone number -->
 <div class="modal fade" id="squarespaceModal3" role="dialog" aria-labelledby="modalLabel">
   <div class="modal-dialog">
@@ -170,7 +138,7 @@
         <div class="modal-footer">
             <div class="btn-group btn-group-justified" role="group" aria-label="group button">
                 <div class="btn-group btn-delete hidden" role="group">
-                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
+                    <a href="" class="btn btn-danger btn-user btn-block signupText" data-dismiss="modal">
                       Save
                     </a>
                 </div>
@@ -205,7 +173,7 @@
         <div class="modal-footer">
             <div class="btn-group btn-group-justified" role="group" aria-label="group button">
                 <div class="btn-group btn-delete hidden" role="group">
-                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
+                    <a href="" class="btn btn-danger btn-user btn-block signupText" data-dismiss="modal">
                       Save
                     </a>
                 </div>
@@ -232,7 +200,7 @@
         <div class="modal-footer">
             <div class="btn-group btn-group-justified" role="group" aria-label="group button">
                 <div class="btn-group btn-delete hidden" role="group">
-                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
+                    <a href="" class="btn btn-danger btn-user btn-block signupText" data-dismiss="modal">
                       Save
                     </a>
                 </div>
@@ -242,68 +210,41 @@
   </div>
 </div>
 
-<!-- line modal for Payment -->
-<div class="modal fade" id="squarespaceModal6" role="dialog" aria-labelledby="modalLabel">
+<!-- line modal for notifications -->
+<div class="modal fade" id="squarespaceModal8" role="dialog" aria-labelledby="modalLabel">
   <div class="modal-dialog">
     <div class="modal-content">
         <div class="modal-header">
-            <h3 class="modal-title" id="lineModalLabel">Change Payment</h3>
+            <h3 class="modal-title" id="lineModalLabel">Communication Settings</h3>
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
         </div>
         <div class="modal-body">
-            <div class="form-group fgModal">
-              <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Email...">
-            </div>
+            <label class="modal-label">Email Address: <strong>exampleemail@gmail.com</strong></label>
+            <br>
+            <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" checked/>
+            <label for="checkboxG4" class="css-label">Reflect Updates</label>
+            <p class="subText">New and enhanced features and tips for getting the most out of your subscription.</p>
+            <br>
+            <input type="checkbox" name="checkboxG5" id="checkboxG5" class="css-checkbox" checked/>
+            <label for="checkboxG5" class="css-label">Reflect Offers</label>
+            <p class="subText">Receive Reflect promotions.</p>
+            <br>
+            <input type="checkbox" name="checkboxG6" id="checkboxG6" class="css-checkbox" checked/>
+            <label for="checkboxG6" class="css-label">Reflect Surveys</label>
+            <p class="subText">Let your opinions be heard by giving us feedback on your experience with Reflect.</p>
+            
         </div>
         <div class="modal-footer">
-            <div class="btn-group btn-group-justified" role="group" aria-label="group button">
-                <div class="btn-group btn-delete hidden" role="group">
-                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
-                      Save
+            <div class="row w-100 h-100" style="padding-right: 20px;">
+                <div class="col-5" >
+                    <a href="" class="btn btn-danger btn-user btn-block signupText">
+                      Close
                     </a>
                 </div>
-            </div>
-        </div>
-    </div>
-  </div>
-</div>
- 
-<!-- line modal for Billing details -->
-<div class="modal fade" id="squarespaceModal7" role="dialog" aria-labelledby="modalLabel">
-  <div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h3 class="modal-title" id="lineModalLabel">Change Billing Details</h3>
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-        </div>
-        <div class="modal-body">
-         <div class="form-group">
-            <label for="inputAddress2">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputCity">City</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="form-group col-md-4">
-              <label for="inputState">State</label>
-              <select id="inputState" class="form-control">
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="form-group col-md-2">
-              <label for="inputZip">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-            <div class="btn-group btn-group-justified" role="group" aria-label="group button">
-                <div class="btn-group btn-delete hidden" role="group">
-                    <a href="step2.html" class="btn btn-danger btn-user btn-block signupText">
-                      Save
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <a href="" class="btn btn-danger btn-user btn-block signupText">
+                       Save
                     </a>
                 </div>
             </div>
@@ -409,7 +350,6 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
   <script src="js/agency.min.js"></script>
 
 </body>

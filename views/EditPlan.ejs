@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Reflect Sign up</title>
+  <title>Reflect</title>
 
   <!-- Custom fonts for this template-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -47,7 +47,6 @@
 </nav>
       <br>
     <div class="row justify-content-center">
-
       <div class="col-lg-8 col-lg-12 col-md-9">
         <div class="card o-hidden border-0 my-5">
           <div class="card-body p-0">
@@ -58,11 +57,13 @@
                   <form class="user" method="post">
                       <div class="container text-center">
                       <h1 class="h2 signinHeader">Edit Subscription</h1>
+                          <div class="addedFamilyMember"><i class="far fa-check-circle"></i> Succefully Changed</div>
                           <br>
                           <div class="row justify-content-center">
-                            <div id="monthly" class="editOptionSub-card ">
+                              <strong id="ifMonthlyCurrentPlan" class="mobileShow">Current Plan:</strong>
+                            <div id="monthly" class="editOptionSub-card">
                                 <div class="row align-items-center equal contextBody-sub">
-                                    <div class="col-3 editSubBackCard"></div>
+                                    <div class="col-3 editSubBackCard mobileHide"></div>
                                     <div class="col col-3 bg-whitesmoke mobileHide">
                                         <div class="row justify-content-center"><strong>Current Plan:</strong></div>
                                         <div class="row justify-content-center">Reflect Monthly</div>
@@ -76,9 +77,10 @@
                           </div>
                           <br>
                           <div class="row justify-content-center">
+                              <strong id="ifYearlyCurrentPlan" class="mobileShow" hidden>Current Plan:</strong>
                             <div id="yearly" class="editOptionSub-card">
                                 <div class="row align-items-center equal contextBody-sub">
-                                    <div class="col-3 editSubBackCard"></div>
+                                    <div class="col-3 editSubBackCard mobileHide"></div>
                                     <div class="col-3 bg-whitesmoke mobileHide">
                                         <div class="row justify-content-center CurrentPlan"><strong>Current Plan:</strong></div>
                                         <div class="row justify-content-center ">Reflect Yearly</div>
