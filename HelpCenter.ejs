@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Reflect Sign up</title>
+  <title>Reflect</title>
 
   <!-- Custom fonts for this template-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -18,26 +18,30 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
     
-
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-gradient-primary page-wrap">
 
 <div class="container my-5">
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top border bg-light" id="mainNav">
-    <div class="container">
-      <div class="container" style="width: 250px; margin: 0;">
-          <div class="row">
-            <div class="col" ><div class="echelonLogo-2"></div></div>
-            <div class="w-100"></div>
-            <div class="col" ><div class="logoy-2"></div></div>
-          </div>
+        <div class="container">
+            <div class="cardEdit">
+              <div class="row">
+                <div class="col" ><div class="echelonLogo-2"></div></div>
+                <div class="w-100"></div>
+                <div class="col" ><div class="logoy-2"></div></div>
+              </div>
+            </div>
+            
+            <div class="spacey-lg"></div>
+            <a class="signinText" href="Profile.html">Profile</a>
+            <a class="signinText" href="login.html">Sign Out</a>
         </div>
-      <a class="signinText" href="login.html">Sign In</a>
-    </div>
 </nav>
-      
+      <br>
     <div class="row justify-content-center">
 
       <div class="col-lg-8 col-lg-12 col-md-9">
@@ -45,43 +49,51 @@
           <div class="card-body p-0">
             <!-- Nested Row within Card Body -->
             <div class="row justify-content-center">
-              <div class="col-lg-6">
+              <div class="col-lg-12">
                 <div class="p-5">
                   <div class="text-center">
-                      <div class="cir"><i class="fas fa-check fa-2x bigCheck"></i></div>
-                      <br>
-                      <div class="stepsText">Step <b>2</b> of <b>3</b></div>
-                    <h1 class="h4 mb-4 signinHeader" style="white-space: nowrap;">Create your account.</h1>
-                      <p>Just a few more steps and you're done!</p>
+                    <h1 class="h4 mb-4 signinHeader">Help Center</h1>
+                      <div class="picHeader"></div>
+                      <hr>
                   </div>
-                  <form class="user" method="get" action="userinfo">
-                      <input id="plan" name="plan" hidden>
+                    <br>
+                  <form class="user" method="post">
                       <div class="text-center">
-                        <div class="form-group">
-                          <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
-                        </div>
-                          <br>
-                        <div class="form-group">
-                          <input type="password" class="form-control form-control-user" id="password" name="psw" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
-                        </div>
-                        <div class="form-group">
-                          <input type="password" class="form-control form-control-user" placeholder="Verify Password" id="txtConfirmPassword">
-                        </div>
-                        <div id="divCheckPasswordMatch" class="h5 invalid"></div>
-                          
-                        <div id="message">
-                          <h5>Password must contain the following:</h5>
-                          <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-                          <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-                          <p id="number" class="invalid">A <b>number</b></p>
-                          <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-                        </div>
-                          
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <p class="h4 mb-4 signinHeader">Manage My Account</p>
+                                </div>
+                                <div class="row text-left helpText">
+                                    <a href="HelpCenterContent.html#ManageMyAccount" class="subText">How do profiles work on reflect?</a>
+                                    <br><br>
+                                    <a href="" class="subText">How do I add family members?</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <p class="h4 mb-4 signinHeader">Can't Sign In</p>
+                                </div>
+                                <div class="row text-left">
+                                    <a href="HelpCenterContent.html#CantSignIn" class="subText">Why isn't Reflect working?</a>
+                                    <br><br>
+                                    <a href="" class="subText">I'm having sound issues when on Reflect?</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <p class="h4 mb-4 signinHeader">Billing Questions</p>
+                                </div>
+                                <div class="row text-left">
+                                    <a href="" class="subText">Your account has a hold on it.</a>
+                                    <br><br>
+                                    <a href="" class="subText">Can I pay for more than one month at a time?</a>
+                                    <br><br>
+                                    <a href="" class="subText">Are there any additional fees associated with the monthly or yearly charge?</a>
+                                </div>
+                            </div>
+                        </div>  
                     </div>
-                      <br>
-                    <button type="submit" id="sumbitBtn" class="btn btn-danger btn-user btn-block signupText">
-                      Continue
-                    </button>
                   </form>
                 </div>
               </div>
@@ -189,9 +201,8 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
   <script src="js/agency.min.js"></script>
-    
+
 </body>
 
 </html>

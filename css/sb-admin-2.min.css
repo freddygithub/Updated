@@ -12614,6 +12614,13 @@ input[type='file'] {
     font-family: 'Helvetica Neue';
     font-weight: 300;
 }
+.contextBody-sm{
+    font-size: 14px;
+    color: #333;
+    font-family: 'Helvetica Neue';
+    font-weight: 300;
+    margin-left: 26px;
+}
 .contextBody-2{
     font-size: 20px;
     color: #333;
@@ -12821,6 +12828,10 @@ input[type='file'] {
     width: 100% !important;
     height: 50px;
 }
+.infoGender-3{
+    width: 40px ;
+    height: 50px;
+}
 .weight{
     width: 200px;
     height: 50px;
@@ -12834,6 +12845,14 @@ input[type='file'] {
   position: relative;
   padding: 20px;
   margin-top: 10px;
+}
+#divCheckPasswordMatch{
+  display:none;
+  color: #e74a3b;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+  font-weight: 300;
 }
 
 #message p {
@@ -13257,6 +13276,9 @@ input[type='file'] {
 .birthday{
     width: 115px;
 }
+.birthday-sm{
+    height: 50px;
+}
 .btn-block-sm{
    width: 200px; 
 }
@@ -13297,6 +13319,14 @@ input[type='file'] {
 .addedFamilyMember{
     width: 300px;
     height: 30px;
+    background-color: red;
+    color: white;
+    margin: auto;
+    font-size: 17px;
+    font-weight: 300;
+}
+.addedFamilyMember-lg{
+    width: 100%;
     background-color: red;
     color: white;
     margin: auto;
@@ -13376,10 +13406,35 @@ input[type=checkbox].css-checkbox {
     border-radius: 50%;
     background-color: gray;
 }
+#emailInUse{
+    color: #FFFFFF;
+    text-align: center;
 
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+     opacity: 1;
+}
+.emailInUse{
+    cursor: pointer !important;
+    border: 0;
+}
+.emailInUse:hover{
+    border: 1px solid whitesmoke;
+}
+.thanks{
+    color: black;
+    color: #333;
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+}
 
 /* Stays at bottom of file, MOBILE CSS*/
 @media (max-width:768px) {
+    .thanks{
+        font-size: 30px !important;
+    }
     .squareOption i{
         position: absolute;
         left: 18%;
@@ -13556,6 +13611,7 @@ input[type=checkbox].css-checkbox {
     }
     .addedFamilyMember{
         width: 100%;
+        height: auto;
     }
 }
 

@@ -34,6 +34,7 @@
             <div class="col" ><div class="logoy-2"></div></div>
           </div>
         </div>
+        
       <a class="signinText" href="login.html">Sign In</a>
     </div>
 </nav>
@@ -45,41 +46,61 @@
           <div class="card-body p-0">
             <!-- Nested Row within Card Body -->
             <div class="row justify-content-center">
-              <div class="col-lg-6">
+              <div class="col-lg-12">
                 <div class="p-5">
                   <div class="text-center">
                       <div class="cir"><i class="fas fa-check fa-2x bigCheck"></i></div>
                       <br>
-                      <div class="stepsText">Step <b>2</b> of <b>3</b></div>
-                    <h1 class="h4 mb-4 signinHeader" style="white-space: nowrap;">Create your account.</h1>
-                      <p>Just a few more steps and you're done!</p>
+                      <div class="stepsText">Step <b>1</b> of <b>3</b></div>
+                    <h1 class="h4 mb-4 signinHeader">Choose a plan that's right for you.</h1>
+                      <p>Downgrade or upgrade at any time</p>
                   </div>
-                  <form class="user" method="get" action="userinfo">
-                      <input id="plan" name="plan" hidden>
+                  <form class="user" method="get" action="createaccount">
                       <div class="text-center">
-                        <div class="form-group">
-                          <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                        <div class="row contextBody-2">
+                            <input id="plan" name="plan" hidden value="1">
+                                <div class="col mobileHide"></div>
+                                 <button type="button" id="ReflectMonthly" class="col col-lg-2 btn btn-danger optionBtn active">Reflect Monthly</button>
+                                 <button type="button" id="ReflectYearly" class="col col-lg-2 btn btn-danger optionBtn">Reflect Yearly</button>
                         </div>
-                          <br>
-                        <div class="form-group">
-                          <input type="password" class="form-control form-control-user" id="password" name="psw" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                        <div class="row border-bottom border-dark contextBody-2">
+                          <p class="cb-2 cbText">Cost after Trial</p>
+                            <p class="cb-Mobile">Cost after Trial</p>
+                                <div class="col cb-2 mobileHide"></div>
+                                 <div class="col col-lg-2 cb-2 mobileHide"></div>
+                            
+                                 <div id="ReflectMonthlyPrice" class="col col-lg-2 cb-2 borderCustom activey text-nowrap">
+                                    <strike class="discounted">39.99
+                                     </strike> 29.99</div>
+                                
+                                 <div id="ReflectYearlyPrice" class="col col-lg-2 cb-2 notActivey text-nowrap">
+                                     <strike class="discounted">399.99
+                                     </strike> 299.99</div>
                         </div>
-                        <div class="form-group">
-                          <input type="password" class="form-control form-control-user" placeholder="Verify Password" id="txtConfirmPassword">
+                          <div class="row border-bottom border-dark contextBody-2">
+                              <p class="cb-2 cbText">Live Streaming Workouts</p>
+                                <p class="cb-Mobile">Live Streaming Workouts</p>
+                                <div class="col cb-2 mobileHide"></div>
+                                 <div class="col col-lg-2 cb-2 mobileHide"></div>
+                                 <div id="ReflectMonthlyFeature1" class="col col-lg-2 cb-2 borderCustom activey"><i class="fas fa-check"></i></div>
+                                 <div id="ReflectYearlyFeature1" class="col col-lg-2 cb-2 notActivey"><i class="fas fa-check"></i></div>
                         </div>
-                        <div id="divCheckPasswordMatch" class="h5 invalid"></div>
-                          
-                        <div id="message">
-                          <h5>Password must contain the following:</h5>
-                          <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-                          <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-                          <p id="number" class="invalid">A <b>number</b></p>
-                          <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                          <div class="row border-bottom border-dark contextBody-2">
+                              <p class="cb-2 cbText">On Demand Workouts</p>
+                              <p class="cb-Mobile">On Demand Workouts</p>
+                                <div class="col cb-2 mobileHide"></div>
+                                 <div class="col col-lg-2 cb-2 mobileHide"></div>
+                                 <div id="ReflectMonthlyFeature2" class="col col-lg-2 cb-2 borderCustom activey"><i class="fas fa-check"></i></div>
+                                 <div id="ReflectYearlyFeature2" class="col col-lg-2 cb-2 notActivey"><i class="fas fa-check"></i></div>
+                            <div></div>
                         </div>
-                          
-                    </div>
-                      <br>
-                    <button type="submit" id="sumbitBtn" class="btn btn-danger btn-user btn-block signupText">
+                       </div>
+                      <br><br>
+                      <div class="row justify-content-center">
+                          <p>Streaming Reflect workout availability subject to your Internet service and device capabilities. See 
+                            <a style="color: blue;" href="https://echelonfit.com/pages/terms-and-conditions">Terms of Use</a> for more details.</p>
+                      </div>
+                    <button type="submit" class="btn btn-danger btn-user btn-block signupText signupbtn">
                       Continue
                     </button>
                   </form>
@@ -180,7 +201,7 @@
 </footer>
 <!-- Footer -->
 
-
+    
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -189,9 +210,8 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
   <script src="js/agency.min.js"></script>
-    
+
 </body>
 
 </html>
