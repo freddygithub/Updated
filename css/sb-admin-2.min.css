@@ -12839,8 +12839,10 @@ input[type='file'] {
 
 /* The message box is shown when the user clicks on the password field */
 #message {
+  font-family: 'Helvetica Neue' !important;
+  font-weight: 150; 
   display:none;
-  background: #f1f1f1;
+  background: whitesmoke;
   color: #000;
   position: relative;
   padding: 20px;
@@ -12853,6 +12855,7 @@ input[type='file'] {
   padding: 20px;
   margin-top: 10px;
   font-weight: 300;
+  background-color: whitesmoke;
 }
 
 #message p {
@@ -13299,8 +13302,8 @@ input[type='file'] {
     margin-top: 10px;
 }
 .squareOption{
-    background-color: #e74a3b;
-    color: white !important;
+    background-color: inherit;
+    color: black !important;
     width: 10px;
     height: 40px;
     align-self: center;
@@ -13311,7 +13314,7 @@ input[type='file'] {
     line-height: 50px;
 }
 .squareOption:hover{
-    background-color: red;
+    color: red !important;
 }
 .cardEdit{
     cursor: pointer;
@@ -13429,6 +13432,12 @@ input[type=checkbox].css-checkbox {
     font-family: 'Helvetica Neue';
     font-weight: bold;
 }
+#emailHasBeenSent, #succefullyChanged, #emailInUse, #succefullyAddedFamilyMember{
+    display: none;
+}
+.h-50px{
+    height: 50px;
+}
 
 /* Stays at bottom of file, MOBILE CSS*/
 @media (max-width:768px) {
@@ -13438,7 +13447,7 @@ input[type=checkbox].css-checkbox {
     .squareOption i{
         position: absolute;
         left: 18%;
-        top: 15%;
+        top: 10%;
     }
     .label-xl{
         font-size: 17px;
