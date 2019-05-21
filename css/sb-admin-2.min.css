@@ -63,8 +63,8 @@ article,aside,figcaption,figure,footer,header,hgroup,main,nav,section {
 body {
   margin: 0;
   font-family: 'Roboto Slab',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  font-size: 0.92rem;
-  font-weight: 100;
+  font-size: 0.99rem;
+  font-weight: 150;
   line-height: 1.5;
   color: #858796;
   text-align: left;
@@ -12608,6 +12608,12 @@ input[type='file'] {
     font-size: 33px;
     font-weight: 500;
 }
+.signinHeader-sm{
+    color: #333;
+    font-family: 'Helvetica Neue';
+    font-size: 20px;
+    font-weight: 500;
+}
 .contextBody{
     font-size: 18px;
     color: #333;
@@ -12860,7 +12866,7 @@ input[type='file'] {
 
 #message p {
   padding: 10px 35px;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 /* Add a green text color and a checkmark when the requirements are right */
@@ -12887,7 +12893,7 @@ input[type='file'] {
 
 .invalid:before {
   position: relative;
-  left: -35px;
+  left: -20px;
     
    font-family: "Font Awesome 5 Free";
    content: "\f00d";
@@ -13322,16 +13328,16 @@ input[type='file'] {
 .addedFamilyMember{
     width: 300px;
     height: 30px;
-    background-color: red;
-    color: white;
+    background-color: inherit;
+    color: forestgreen;
     margin: auto;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 300;
 }
 .addedFamilyMember-lg{
     width: 100%;
-    background-color: red;
-    color: white;
+    background-color: inherit;
+    color: forestgreen;
     margin: auto;
     font-size: 17px;
     font-weight: 300;
@@ -13410,7 +13416,6 @@ input[type=checkbox].css-checkbox {
     background-color: gray;
 }
 #emailInUse{
-    color: #FFFFFF;
     text-align: center;
 
     -webkit-transition: opacity 3s ease-in-out;
@@ -13432,12 +13437,24 @@ input[type=checkbox].css-checkbox {
     font-family: 'Helvetica Neue';
     font-weight: bold;
 }
-#emailHasBeenSent, #succefullyChanged, #emailInUse, #succefullyAddedFamilyMember{
+#emailHasBeenSent, #succefullyChanged, #emailInUse, #succefullyAddedFamilyMember, #currentPlanM2, #currentPlanY2,
+#currentPlanM1, #currentPlanY1{
     display: none;
 }
 .h-50px{
     height: 50px;
 }
+.fg{
+    color: forestgreen !important;
+}
+.fg:hover{
+    text-decoration: underline !important;
+    font-weight: 300;
+}
+
+
+
+
 
 /* Stays at bottom of file, MOBILE CSS*/
 @media (max-width:768px) {
@@ -13621,6 +13638,13 @@ input[type=checkbox].css-checkbox {
     .addedFamilyMember{
         width: 100%;
         height: auto;
+    }
+    #message p {
+      padding: 10px 25px;
+      font-size: 14px;
+    }
+    #message b {
+      font-size: 15px;
     }
 }
 
